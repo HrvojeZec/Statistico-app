@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "784641342695",
+    "project_id": "statistico-621c9",
+    "storage_bucket": "statistico-621c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784641342695:android:d0942a952a48685e21f642",
+        "android_client_info": {
+          "package_name": "com.example.statistico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784641342695-m3aohkc8b1qn31f11v613jlt3p7prfbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7-xna47uPWmNTN-ZTVr79TxMq-1ouOFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784641342695-m3aohkc8b1qn31f11v613jlt3p7prfbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

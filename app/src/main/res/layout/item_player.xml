@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_player_main"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:padding="4dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iV_player_img"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:srcCompat="@drawable/unknown_flag" />
+
+    <TextView
+        android:id="@+id/player_name_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iV_player_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tV_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/player_name_holder"
+        app:layout_constraintTop_toTopOf="@+id/player_name_holder" />
+
+    <TextView
+        android:id="@+id/player_team_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Current Team: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iV_player_img"
+        app:layout_constraintTop_toBottomOf="@id/player_name_holder" />
+
+    <TextView
+        android:id="@+id/tV_player_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Current Team"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/player_team_holder"
+        app:layout_constraintTop_toTopOf="@+id/player_team_holder" />
+
+    <TextView
+        android:id="@+id/player_age_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Age: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iV_player_img"
+        app:layout_constraintTop_toBottomOf="@id/tV_player_team" />
+
+    <TextView
+        android:id="@+id/tV_player_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Age"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/player_age_holder"
+        app:layout_constraintTop_toTopOf="@+id/player_age_holder" />
+
+    <TextView
+        android:id="@+id/player_position_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Position: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iV_player_img"
+        app:layout_constraintTop_toBottomOf="@id/tV_player_age" />
+
+    <TextView
+        android:id="@+id/tV_player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Position"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/player_position_holder"
+        app:layout_constraintTop_toTopOf="@+id/player_position_holder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

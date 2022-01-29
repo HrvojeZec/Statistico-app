@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006400"
+    tools:context=".ui.TeamActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_team"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_team_back"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iV_team"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Team Name"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tV_tournament"
+            android:layout_width="wrap_content"
+            android:textColor="#C0C0C0"
+            android:layout_height="wrap_content"
+            android:text="Team League Name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circle_teal"
+                android:gravity="center"
+                android:text="#"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:id="@+id/tV_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Rank 1"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/bg_circle_teal"
+                android:gravity="center"
+                android:text="R"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:id="@+id/tV_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Rating 1.0"
+                android:textColor="#FFD700" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iV_back"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintLeft_toLeftOf="@id/layout_team"
+        app:layout_constraintTop_toTopOf="@id/layout_team" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rV_players"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_team" />
+</androidx.constraintlayout.widget.ConstraintLayout>
